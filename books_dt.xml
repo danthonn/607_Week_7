@@ -1,0 +1,31 @@
+<?xml version="1.0"encoding="UTF-8"?>
+<BOOKS>
+   <HEADINGS>
+      <TITLE>Title</TITLE>
+      <AUTHORS>Authors</AUTHORS>
+      <YEAR-FIRST-EDITION>Year-First-Edition</YEAR-FIRST-EDITION>
+      <YEAR-FIRST-FILM>Year-First-Film</YEAR-FIRST-FILM>
+      <ORIGINAL-PUBLISHER>Original-Publisher</ORIGINAL-PUBLISHER>	
+   </HEADINGS>
+   <BOOK>
+      <TITLE>The Virginian</TITLE>
+      <AUTHORS>Owen Wister</AUTHORS>
+      <YEAR-FIRST-EDITION>1902</YEAR-FIRST-EDITION>
+      <YEAR-FIRST-FILM>1914</YEAR-FIRST-FILM>
+      <ORIGINAL-PUBLISHER>Macmillan Publishers</ORIGINAL-PUBLISHER>	
+   </BOOK>
+   <BOOK>
+      <TITLE>Riders of the Purple Sage</TITLE>
+      <AUTHORS>Zane Grey</AUTHORS>
+      <YEAR-FIRST-EDITION>1912</YEAR-FIRST-EDITION>
+      <YEAR-FIRST-FILM>na</YEAR-FIRST-FILM>
+      <ORIGINAL-PUBLISHER>Harper and Brothers</ORIGINAL-PUBLISHER>	
+   </BOOK>
+   <BOOK>
+      <TITLE>Crooked Trails</TITLE>
+      <AUTHORS>Frederick Remington</AUTHORS>
+      <YEAR-FIRST-EDITION>1898</YEAR-FIRST-EDITION>
+      <YEAR-FIRST-FILM>1918</YEAR-FIRST-FILM>
+      <ORIGINAL-PUBLISHER>Harper and Brothers</ORIGINAL-PUBLISHER>	
+   </BOOK>
+</BOOKS>

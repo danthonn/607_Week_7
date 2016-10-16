@@ -1,0 +1,34 @@
+[
+   {
+        "Title": "Title",
+        "Authors": "Authors",
+        "Year-First-Edition": "Year-First-Edition",
+        "Year-First-Film": "Year-First-Film",
+        "Original-Publisher": "Original-Publisher"
+       
+    },   
+   {
+        "Title": "The Virginian",
+        "Authors": "Owen Wister",
+        "Year-First-Edition": "1902",
+        "Year-First-Film": "1914",
+        "Original-Publisher": "Macmillan Publishers"
+       
+    },
+    {
+        "Title": "Riders of the Purple Sage,
+        "Authors": "Zane Grey",
+        "Year-First-Edition": "1912",
+        "Year-First-Film": "na",
+        "Original-Publisher": "Harper and Brothers"
+       
+    },
+    {
+        "Title": "Crooked Trails",
+        "Authors": "Frederick Remington",
+        "Year-First-Edition": "1898",
+        "Year-First-Film": "1918",
+        "Original-Publisher": "Harper and Brothers" 
+    }
+    
+]
