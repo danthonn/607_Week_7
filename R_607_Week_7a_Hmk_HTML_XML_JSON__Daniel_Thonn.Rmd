@@ -1,0 +1,116 @@
+---
+title: "R_607_Week_7a_Hmk_HTML_XML_JSON__Daniel_Thonn"
+output: html_document
+course: R-607 CUNY MSDA program
+
+---
+
+## Assignment 607_Homework-7: Hmw_607_Working_with_XML_and_JSON_in_R_Daniel_Thonn
+
+Summary of Assignment
+This assignment involves loading and Transforming HTML,XML, and JSON data
+
+This Assignment requires the following:
+
+1). R-Studio
+
+The following R-packages are used:
+#install.packages("XML")
+#install.packages("RCurl")
+#install.packages("RJSONIO")
+
+
+Steps to reproduce:
+1). Place the following (3) files in directory: "C:\mysqldata"
+books_dt.html
+books_dt.xml
+books_dt.JSON
+
+2). run the R-Studio file: R_607_Week_7a_Hmk_HTML_XML_JSON__Daniel_Thonn.Rmd
+
+
+Setting up and Preparing the Environment
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=TRUE}
+
+#install.packages("XML")
+library(XML)
+#install.packages("RCurl")
+library(RCurl)
+#install.packages("RJSONIO")
+library(RJSONIO)
+
+```
+
+
+Load the HTML file and check structure
+
+
+```{r, echo=TRUE}
+# Load the HTML file
+html_1 <- getURL("https://raw.githubusercontent.com/danthonn/607_Week_7/master/books_dt.html")
+html_1
+
+# Read into an HTML table
+html_2 <- readHTMLTable(html_1, header=TRUE)
+html_2
+
+# Read into a Data Frame and check output
+html_3 <- as.data.frame(html_2)
+html_3
+head(html_3)
+
+```
+
+
+
+Load the XML file and check structure
+
+```{r, echo=TRUE}
+# Load the XML file
+xml_1 <- getURL("https://raw.githubusercontent.com/danthonn/607_Week_7/master/books_dt.xml")
+xml_1
+# Parse the XML file
+xml_2 <- xmlTreeParse(xml_1)
+
+# Display the XML file
+root_1 <- xmlRoot(xml_2)
+xml_3 <- xmlSApply(root_1, xmlValue)
+xml_3
+
+# Load the XML file into a Data Frame
+xml_4 <- as.data.frame(xml_3)
+xml_4
+
+
+```
+
+
+Load the JSON file and check structure
+
+```{r, echo=TRUE}
+# Load the JSON file
+json_1 <- getURL("https://raw.githubusercontent.com/danthonn/607_Week_7/master/books_dt.JSON")
+json_1
+
+# Read raw data into improved format
+json_2 = RJSONIO::fromJSON(json_1)
+json_2
+
+# Place in a data frame
+json_3 <- as.data.frame(json_2)
+json_3
+
+
+```
+
+
+Conclusion: The outputs of HTML, XML, and JSON are different, though similar once loaded to a data frame. They contain the same information in different formats.   For further processing these different formats would need to be handled differently to extract and process the same information contained within.
+
+
+
+#END
